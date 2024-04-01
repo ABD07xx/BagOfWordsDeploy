@@ -9,6 +9,7 @@ import plotly.express as px
 from collections import Counter
 from sklearn.feature_extraction.text import CountVectorizer
 import re
+nltk.download("punkt")
 
 stemmer = PorterStemmer()
 lemma = WordNetLemmatizer()
