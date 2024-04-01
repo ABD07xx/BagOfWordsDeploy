@@ -10,6 +10,7 @@ from collections import Counter
 from sklearn.feature_extraction.text import CountVectorizer
 import re
 nltk.download("punkt")
+nltk.download('stopwords')
 
 stemmer = PorterStemmer()
 lemma = WordNetLemmatizer()
