@@ -48,7 +48,7 @@ def scrape_wikipedia(inp):
 
     return paragraphs.strip()
 
-inp = st.text_input("Enter Person's Name")
+inp = st.text_input("Enter any topic name to generate corpus")
 if inp:
     paragraphs = scrape_wikipedia(inp)
     st.download_button('Download Text File', data=paragraphs, file_name=f'{inp}_wikipedia.txt')
