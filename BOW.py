@@ -81,17 +81,16 @@ if st.checkbox("Click"):
         st.text(updated_corpus_2)
 
 st.title("Vectors")
-if st.checkbox("Visualize Vectors"):
-    show_vectors = st.checkbox("Show Vectors")
-    if show_vectors:
-        cv = CountVectorizer()
-        X = cv.fit_transform(updated_corpus).toarray()
-        st.write("Stemmed Vectors:")
-        st.write(X)
-        cv = CountVectorizer()
-        X = cv.fit_transform(updated_corpus_2).toarray()
-        st.write("Lemmatized Vectors:")
-        st.write(X)
+show_vectors = st.checkbox("Show Vectors")
+if show_vectors:
+    cv = CountVectorizer()
+    X = cv.fit_transform(updated_corpus).toarray()
+    st.write("Stemmed Vectors:")
+    st.write(X)
+    cv = CountVectorizer()
+    X = cv.fit_transform(updated_corpus_2).toarray()
+    st.write("Lemmatized Vectors:")
+    st.write(X)
 
 
 st.title("Visualise")
