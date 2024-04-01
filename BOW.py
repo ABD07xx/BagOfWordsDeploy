@@ -11,6 +11,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import re
 nltk.download("punkt")
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 stemmer = PorterStemmer()
 lemma = WordNetLemmatizer()
